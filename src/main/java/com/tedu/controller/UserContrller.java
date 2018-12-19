@@ -10,11 +10,9 @@ import org.springframework.web.bind.annotation.RestController;
 public class UserContrller {
 	@RequestMapping("hi")
 	public String hi( int i) {
-<<<<<<< HEAD
+
 		return "hello twolegs!";
-=======
-		return "second branch!";
->>>>>>> refs/remotes/origin/twolegfuwenbo
+
 		
 		
 	}
