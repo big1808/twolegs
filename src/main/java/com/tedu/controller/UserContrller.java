@@ -9,7 +9,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("hello/")
 public class UserContrller {
 	@RequestMapping("hi")
-	public String hi() {
+	public String hi( int i) {
 		return "hello twolegs!";
+		
+		
 	}
 }
