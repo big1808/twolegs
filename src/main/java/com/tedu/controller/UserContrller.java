@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class UserContrller {
 	@RequestMapping("hi")
 	public String hi( int i) {
-		return "second branch!";
+		return "third  branch!";
 		
 		
 	}
