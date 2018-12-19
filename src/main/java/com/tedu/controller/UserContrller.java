@@ -11,9 +11,7 @@ public class UserContrller {
 	@RequestMapping("hi")
 	public String hi( int i) {
 
-		return "hello twolegs!";
-
-		
+		return "hello twolegs!";	
 		
 	}
 }
