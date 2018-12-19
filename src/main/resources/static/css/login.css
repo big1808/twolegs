@@ -1,0 +1,43 @@
+body{
+    background: url("../img/1.jpg");
+    animation-name:myfirst;
+    animation-duration:12s;
+    /*变换时间*/
+    animation-delay:2s;
+    /*动画开始时间*/
+    animation-iteration-count:infinite;
+    /*下一周期循环播放*/
+    animation-play-state:running;
+    /*动画开始运行*/
+}
+@keyframes myfirst
+{
+    0%   {background:url("../img/1.jpg");}
+    34%  {background:url("../img/2.jpg");}
+    67%  {background:url("../img/3.jpg");}
+    100% {background:url("../img/1.jpg");}
+}
+.form{width:320px;margin:120px auto}
+.fa{display: inline-block;top: 27px;left: 6px;position: relative;color: #ccc;}
+input[type="text"],input[type="password"]{padding-left:26px;}
+.checkbox{padding-left:21px;}
+button{width:100%}
+p.text-danger{
+	margin-bottom:-12px;
+}
+.tedu-content{
+	margin-top:25px;
+	background-color:rgba(200,200,200,0.3)
+}
+.tedu-content p{
+	margin:10px 0 0;
+}
+#verifyCode{
+	display:inline-block;
+	width:200px;
+}
+#verifyImg{
+	height:34px;
+	margin-left:20px;
+	vertical-align:middle;
+}
