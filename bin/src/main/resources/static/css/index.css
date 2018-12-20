@@ -1,0 +1,13 @@
+#header-nav{
+	background-color:rgba(0,0,0,0.9);
+}
+#header-nav .navbar-brand{
+	padding:0;
+}
+#header-nav .navbar-brand img{
+	width:40px;
+}
+#nav-head{
+	width:40px;
+	border-radius:50%;
+}
