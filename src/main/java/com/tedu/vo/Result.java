@@ -1,6 +1,7 @@
 package com.tedu.vo;
 
 import java.io.Serializable;
+import java.util.Map;
 
 public class Result implements Serializable {
 	
@@ -11,6 +12,16 @@ public class Result implements Serializable {
 	private String message;
 	//结果数据
 	private Object data;
+	private Map map;
+	public Map getMap() {
+		return map;
+	}
+	public void setMap(Map map) {
+		this.map = map;
+	}
+	public static long getSerialversionuid() {
+		return serialVersionUID;
+	}
 	public int getStatus() {
 		return status;
 	}

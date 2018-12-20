@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tedu.dao.UserMapper">
+       <resultMap type="com.tedu.entity.User" id="userMap">
+             <id column="user_id" property="id"/>
+             <result column="user_teduname" property="teduName"/>
+             <result column="user_name" property="passWord"/>
+             <result column="user_password" property="name"/>
+             <result column="user_head" property="head"/>
+             <result column="user_score" property="score"/>
+             <result column="user_status" property="status"/>
+             <result column="user_lock" property="lock"/>
+             <result column="user_regdate" property="regDate"/>
+             <result column="user_age" property="age"/>
+             <result column="user_like" property="like"/>
+             <result column="user_sex" property="sex"/>
+             <result column="user_introduction" property="introduction"/>
+             <result column="user_photo" property="photo"/>
+             <result column="user_birthday" property="birthday"/>
+             <result column="user_pv" property="pv"/>
+       </resultMap>
+       <insert id="addUser" parameterMap="userMap">
+             insert into user (
+                   user_id,
+                   user_teduname,
+                   user_name,
+                   user_password,
+                   user_head,
+                   user_score,
+                   user_status,
+                   user_lock,
+                   user_regdate,
+                   user_age,
+                   user_like,
+                   user_sex,
+                   user_introduction,
+                   user_photo,
+                   user_birthday,
+                   user_pv
+             )values(
+                   user_id=#{id},
+                   user_teduname=#{teduName},
+                   user_name=#{passWord},
+                   user_password=#{name},
+                   user_head=#{head},
+                   user_score=#{score},
+                   user_status=#{status},
+                   user_lock={lock},
+                   user_regdate={regDate},
+                   user_age={age},
+                   user_like={like},
+                   user_sex={sex},
+                   user_introduction={introduction},
+                   user_photo={photo},
+                   user_birthday={birthday},
+                   user_pv={pv}
+             )
+       </insert>
+       //edit by fuwenbo
+       <select id="getUser" parameterType="string"  resultMap="userMap">
+       select * from user where user_id=#{userId}       
+       </select>
+       
+       
+</mapper>
