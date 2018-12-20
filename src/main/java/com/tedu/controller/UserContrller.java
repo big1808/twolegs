@@ -1,5 +1,6 @@
 package com.tedu.controller;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -12,7 +13,7 @@ import com.tedu.vo.Result;
 @RestController
 @RequestMapping("user/")
 public class UserContrller {
-	
+	@Autowired
 	UserService userService;
 	/**
 	 * 用户信息详情页

@@ -1,7 +1,9 @@
 package com.tedu.service;
 
-import com.tedu.vo.Result;
+import org.springframework.context.annotation.ComponentScan;
 
+import com.tedu.vo.Result;
+@ComponentScan
 public interface UserService {
 
 	/**

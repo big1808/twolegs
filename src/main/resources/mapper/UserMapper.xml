@@ -20,7 +20,7 @@
              <result column="user_birthday" property="birthday"/>
              <result column="user_pv" property="pv"/>
        </resultMap>
-       <insert id="addUser" parameterMap="userMap">
+       <!-- <insert id="addUser" parameterMap="userMap">
              insert into user (
                    user_id,
                    user_teduname,
@@ -56,7 +56,7 @@
                    user_birthday={birthday},
                    user_pv={pv}
              )
-       </insert>
+       </insert> -->
        //edit by fuwenbo
        <select id="getUser" parameterType="string"  resultMap="userMap">
        select * from user where user_id=#{userId}       
