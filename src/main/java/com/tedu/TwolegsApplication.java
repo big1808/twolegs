@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-@MapperScan("com.tedu.dao")
+@MapperScan(basePackages= {"com.tedu.dao"})
 public class TwolegsApplication {
 
 	public static void main(String[] args) {

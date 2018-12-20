@@ -5,12 +5,13 @@ import java.util.HashMap;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.tedu.dao.UserDao;
 import com.tedu.entity.User;
 import com.tedu.service.UserService;
 import com.tedu.vo.Result;
-
+@Service("userService")
 public class UserServiceImpl implements UserService {
 	@Autowired
 	UserDao userDao;	

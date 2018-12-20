@@ -3,7 +3,7 @@ package com.tedu.service;
 import org.springframework.context.annotation.ComponentScan;
 
 import com.tedu.vo.Result;
-@ComponentScan
+
 public interface UserService {
 
 	/**
